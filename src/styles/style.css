@@ -1,0 +1,16 @@
+*{margin:  0;}
+html, body{height: 100%;}
+.image_container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    gap: 2%;
+    margin-left: 3%;
+}
+.image_container a{
+    width: 100%;
+}
+.image_container a img{
+    width: 100%;
+}
