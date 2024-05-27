@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import '../styles/style.css'
+import DragDrop from "./DragDrop";
+import Header from "./Header";
 const MainView = () => {
 
     const [images, setImages] = useState([])
@@ -16,17 +18,19 @@ const MainView = () => {
 
     useEffect(() => {
         get_images()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     return(
         <div className="container">
-            <form action="http://localhost:5001/upload" method="post" encType="multipart/form-data">
-                <input type="file" multiple name="image"/>
-                <button type="submit">Envoyer</button>
-            </form>
+            <Header/>
+            <DragDrop />
+            <h2>Les dernières photos ajoutées</h2>
             <div className="image_container">
+                
                 {console.log(images)}
                 {
+                    // eslint-disable-next-line eqeqeq
                     images.length == 0 ? "" : images.map(elem => <a download={elem.file_name} href={elem.file_path}><img src={elem.file_path} alt="" /></a>)
                 }
             </div>

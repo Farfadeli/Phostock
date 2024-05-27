@@ -1,0 +1,65 @@
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+header .header_title{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header .header_title a{color: black;}
+header .header_list{
+    width : 50%
+}
+header .header_list ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+header a{text-decoration: none;}
+header .header_list ul a{
+    margin-left: 7.5%;
+    color: black;
+    font-size: large;
+}
+header .header_list ul a:hover{
+    color: rgb(64, 130, 181);
+    transition: .5s;
+}
+header .header_btn{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    height: 100%;
+}
+header .header_btn a:nth-child(1){
+    border: 1px solid black;
+    padding: .75rem ;
+    color: black;
+    border-radius: 8px;
+}
+header .header_btn a:nth-child(2){
+    border: 1px solid rgb(64, 130, 181);
+    background-color: rgb(64, 130, 181);
+    padding: .75rem ;
+    color: white;
+    border-radius: 8px;
+}
+header .header_btn a:nth-child(2):hover{
+    background-color: transparent;
+    color: rgb(64, 130, 181);
+    transition: .5s;
+}
+header .header_btn a:nth-child(1):hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
